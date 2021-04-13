@@ -52,7 +52,7 @@ class EmzConverter:
         return Path(folder_input_path), Path(folder_output_path)
 
     @staticmethod
-    def find_files(path: Path, suffix: str):
+    def find_files(path: Path, suffix: str) -> Generator:
         """
         Lists all the files with a given suffix under a folder.
 
